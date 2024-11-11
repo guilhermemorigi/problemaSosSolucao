@@ -2,13 +2,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const riskForm = document.getElementById("riskForm");
     const riskList = document.getElementById("riskList");
 
-    // Função para carregar riscos do localStorage
     function loadRisks() {
         const risks = JSON.parse(localStorage.getItem("risks")) || [];
         risks.forEach((risk) => addRiskToList(risk));
     }
 
-    // Função para adicionar risco à lista
     function addRiskToList(risk) {
         const listItem = document.createElement("li");
         listItem.innerHTML = `
@@ -21,14 +19,12 @@ document.addEventListener("DOMContentLoaded", () => {
         riskList.appendChild(listItem);
     }
 
-    // Função para salvar riscos no localStorage
     function saveRisk(risk) {
         const risks = JSON.parse(localStorage.getItem("risks")) || [];
         risks.push(risk);
         localStorage.setItem("risks", JSON.stringify(risks));
     }
 
-    // Função para excluir risco
     function deleteRisk(description) {
         let risks = JSON.parse(localStorage.getItem("risks")) || [];
         risks = risks.filter((risk) => risk.description !== description);
@@ -36,13 +32,11 @@ document.addEventListener("DOMContentLoaded", () => {
         renderRisks();
     }
 
-    // Função para renderizar a lista de riscos
     function renderRisks() {
         riskList.innerHTML = "";
         loadRisks();
     }
 
-    // Evento para adicionar novo risco
     riskForm.addEventListener("submit", (e) => {
         e.preventDefault();
 
@@ -57,6 +51,5 @@ document.addEventListener("DOMContentLoaded", () => {
         riskForm.reset();
     });
 
-    // Carregar riscos ao iniciar
     loadRisks();
 });
