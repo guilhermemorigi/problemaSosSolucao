@@ -12,7 +12,7 @@
         align-items: center;
         height: 100vh;
         margin: 0;
-        background-image:url(logoSos.png);
+        background-color: #bbbbbb;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -23,13 +23,19 @@
         padding: 20px;
         background-color: rgba(255, 255, 255, 0.9);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center; /* Alinha o conteúdo da div ao centro */
+      }
+      .logo {
+        width: 100px; /* Ajuste o tamanho conforme necessário */
+        margin-bottom: 10px;
       }
       h2 {
-        text-align: center;
         color: #333;
+        margin-top: 0;
       }
       .form-group {
         margin-bottom: 15px;
+        text-align: left; /* Alinha os labels e inputs à esquerda */
       }
       label {
         display: block;
@@ -63,6 +69,7 @@
   </head>
   <body>
     <div class="container">
+      <img src="logoSos.png" alt="Logo" class="logo" />
       <h2>Cadastro de Usuário</h2>
       <form action="#" method="POST">
         <div class="form-group">
