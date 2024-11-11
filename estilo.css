@@ -1,79 +1,136 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
 header {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-h1, h2 {
-    color: #333;
+menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+/* Estilo para o menu */
+menu ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
 }
 
-.risk-form, .risk-list {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 400px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
+menu ul li {
+  position: relative;
+  margin-right: 20px; /* Espaçamento entre os itens do menu */
+}
+
+menu ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  background-color: #f4f4f4;
+  color: #333;
+  background-color: chartreuse;
+  border-radius: 8px;
+}
+
+menu ul li a:hover {
+  color: #ffffff;
+  background-color: rgb(63, 119, 6);
+  transition: 0.5s;
+}
+
+/* Estilo para o submenu */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f4f4f4;
+  padding: 0;
+  list-style-type: none;
+}
+
+.submenu li a {
+  padding: 10px;
+  width: 200px;
+}
+
+menu ul li:hover .submenu {
+  display: block;
+}
+h1,
+h2 {
+  color: #333;
+}
+
+.risk-form,
+.risk-list {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 label {
-    margin-top: 10px;
-    color: #555;
+  margin-top: 10px;
+  color: #555;
 }
 
-input, select, button {
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+input,
+select,
+button {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 button {
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    margin-top: 15px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
 }
 
 button:hover {
-    background-color: #218838;
+  background-color: #218838;
 }
 
 .risk-list ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .risk-list li {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .risk-level {
-    font-weight: bold;
+  font-weight: bold;
 }
