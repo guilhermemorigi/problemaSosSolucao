@@ -41,13 +41,14 @@ menu ul li a {
   padding: 10px;
   background-color: #f4f4f4;
   color: #333;
-  background-color: chartreuse;
+  background-color: #F5B900;
+  border: 1px solid #333; /* Borda ao redor de cada item */
   border-radius: 8px;
 }
 
 menu ul li a:hover {
   color: #ffffff;
-  background-color: rgb(63, 119, 6);
+  background-color: #d7a202;
   transition: 0.5s;
 }
 
@@ -106,7 +107,7 @@ button {
 }
 
 button {
-  background-color: #28a745;
+  background-color: #F5B900;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -114,7 +115,7 @@ button {
 }
 
 button:hover {
-  background-color: #218838;
+  background-color: #d7a202;
 }
 
 .risk-list ul {
