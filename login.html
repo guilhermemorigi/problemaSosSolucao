@@ -24,15 +24,38 @@
           alt="Logo"
           class="logo"
           style="width: 200px; height: 200px" />
-        <h2>Login</h2>
-        <form id="loginForm">
+        <form class="loginForm" id="loginForm" style="display: flex">
+          <h2>Login</h2>
           <label for="username">Usuário:</label>
           <input type="text" id="username" required />
           <label for="password">Senha:</label>
           <input type="password" id="password" required />
           <button type="submit"><a href="inicio.html">Entrar</a></button>
+          <button type="button" onclick="alteraFormulario()">Cadastrar</button>
+        </form>
+        <form class="cadForm" id="cadForm" style="display: none">
+          <h2>Cadastro</h2>
+          <label for="newUsername">Novo Usuário:</label>
+          <input type="text" id="newUsername" required />
+          <label for="newPassword">Senha:</label>
+          <input type="password" id="newPassword" required />
+          <button type="submit">Registrar</button>
+          <button type="button" onclick="alteraFormulario()">Logar</button>
         </form>
       </section>
     </main>
+    <script>
+      function alteraFormulario() {
+        const login = document.getElementById("loginForm");
+        const cadastro = document.getElementById("cadForm");
+        if (login.style.display === "none") {
+          login.style.display = "flex";
+          cadastro.style.display = "none";
+        } else {
+          login.style.display = "none";
+          cadastro.style.display = "flex";
+        }
+      }
+    </script>
   </body>
 </html>
