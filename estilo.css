@@ -33,6 +33,7 @@ menu ul {
 menu ul li {
   position: relative;
   margin-right: 20px; /* Espaçamento entre os itens do menu */
+  padding-top: 10px;
 }
 
 menu ul li a {
@@ -41,7 +42,7 @@ menu ul li a {
   padding: 10px;
   background-color: #f4f4f4;
   color: #333;
-  background-color: #F5B900;
+  background-color: #f5b900;
   border: 1px solid #333; /* Borda ao redor de cada item */
   border-radius: 8px;
 }
@@ -107,15 +108,16 @@ button {
 }
 
 button {
-  background-color: #F5B900;
-  color: #fff;
-  border: none;
+  background-color: #f5b900;
+  color: #000000;
+  border: 1px solid #333; /* Borda ao redor de cada item */
   cursor: pointer;
   margin-top: 15px;
 }
 
 button:hover {
   background-color: #d7a202;
+  color: white;
 }
 
 .risk-list ul {
