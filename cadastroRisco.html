@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadatro de Risco Ocupacional</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="icon" href="logoSos.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1>Cadastrado de Risco Ocupacional</h1>
+      <menu>
+        <ul>
+          <li><a href="inicio.html">Inicio</a></li>
+          <li>
+            <a href="#">Cadastro</a>
+            <ul class="submenu">
+              <li><a href="cadastroFuncoes.html">Cadastrar Funções</a></li>
+              <li><a href="cadastrosetor.html">Cadastrar Setor</a></li>
+              <li><a href="cadastroCNPJ.html">Cadastro de CNPJ</a></li>
+              <li>
+                <a href="cadastroRisco.html">Cadastro de Risco Ocupacional</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="cadastroUsuarios.html">Cadastro de Usuários</a></li>
+        </ul>
+      </menu>
+    </header>
+    <main>
+      <section class="risk-form">
+        <h2>Cadastro de Risco</h2>
+        <form id="riskForm">
+          <label for="riskDescription">Descrição do Risco:</label>
+          <input type="text" id="riskDescription" required />
+
+          <label for="riskLevel">Nível de Risco:</label>
+          <select id="riskLevel" required>
+            <option value="Baixo">Baixo</option>
+            <option value="Médio">Médio</option>
+            <option value="Alto">Alto</option>
+          </select>
+
+          <button type="submit">Adicionar Risco</button>
+        </form>
+      </section>
+
+      <section class="risk-list">
+        <h2>Riscos Cadastrados</h2>
+        <ul id="riskList"></ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

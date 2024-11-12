@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="icon" href="logoSos.png" type="image/x-icon" />
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -23,10 +25,10 @@
         padding: 20px;
         background-color: rgba(255, 255, 255, 0.9);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        text-align: center; 
+        text-align: center;
       }
       .logo {
-        width: 100px; 
+        width: 100px;
         margin-bottom: 10px;
       }
       h2 {
@@ -35,7 +37,7 @@
       }
       .form-group {
         margin-bottom: 15px;
-        text-align: left; 
+        text-align: left;
       }
       label {
         display: block;
@@ -56,18 +58,38 @@
         width: 100%;
         padding: 10px;
         border: none;
-        background-color: #F5B900;
+        background-color: #f5b900;
         color: white;
         font-size: 16px;
         border: 1px solid #333; 
         cursor: pointer;
       }
       button:hover {
-        background-color: #F5B900;
+        background-color: #f5b900;
       }
     </style>
   </head>
   <body>
+    <header>
+      <h1>Cadastro de CNPJ</h1>
+      <menu>
+        <ul>
+          <li><a href="inicio.html">Inicio</a></li>
+          <li>
+            <a href="#">Cadastro</a>
+            <ul class="submenu">
+              <li><a href="cadastroFuncoes.html">Cadastrar Funções</a></li>
+              <li><a href="cadastrosetor.html">Cadastrar Setor</a></li>
+              <li><a href="cadastroCNPJ.html">Cadastro de CNPJ</a></li>
+              <li>
+                <a href="cadastroRisco.html">Cadastro de Risco Ocupacional</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="cadastroUsuarios.html">Cadastro de Usuários</a></li>
+        </ul>
+      </menu>
+    </header>
     <div class="container">
       <img src="logoSos.png" alt="Logo" class="logo" />
       <h2>Cadastro de Usuário</h2>

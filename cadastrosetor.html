@@ -1,59 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cadastro de Setor</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      font-family: Arial, sans-serif;
-     background-color: #bbbbbb;
-     
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Setor</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="icon" href="logoSos.png" type="image/x-icon" />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #bbbbbb;
 
-   
-    .form-container {
-      width: 100%;
-      max-width: 400px;
-      padding: 20px;
-      background-color: rgba(255, 255, 255, 0.9); 
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      text-align: center;
-    }
-    .logo {
-      width: 80px;
-      margin-bottom: 20px;
-    }
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
 
-    h2 {
-      color: #333;
-      margin-bottom: 20px;
-    }
+      .form-container {
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+      }
+      .logo {
+        width: 80px;
+        margin-bottom: 20px;
+      }
 
-    label {
-      font-weight: bold;
-      color: #555;
-    }
+      h2 {
+        color: #333;
+        margin-bottom: 20px;
+      }
 
-    input[type="text"] {
-      width: 100%;
-      padding: 10px;
-      margin-top: 10px;
-      margin-bottom: 20px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      box-sizing: border-box;
-    }
+      label {
+        font-weight: bold;
+        color: #555;
+      }
 
+<<<<<<< HEAD
     input[type="submit"] {
       width: 100%;
       padding: 10px;
@@ -65,23 +57,64 @@
       cursor: pointer;
       transition: background-color 0.3s;
     }
+=======
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+>>>>>>> 4b57fdf874a835d9e787710193554fdaadeb21b7
 
-    input[type="submit"]:hover {
-      background-color: #F5B900;
-    }
-  </style>
-</head>
-<body>
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #f5b900;
+        color: white;
+        border: 1px solid #333; /* Borda ao redor de cada item */
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
 
-  <div class="form-container">
-    <img src="logoSos.png" alt="Logo" class="logo">
-    <h2>Cadastro de Setor</h2>
-    <form action="/submit_form" method="post">
-      <label for="nome">Nome do Setor:</label>
-      <input type="text" id="nome" name="nome" required>
-      <input type="submit" value="Cadastrar">
-    </form>
-  </div>
-
-</body>
+      input[type="submit"]:hover {
+        background-color: #f5b900;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Cadastro de CNPJ</h1>
+      <menu>
+        <ul>
+          <li><a href="inicio.html">Inicio</a></li>
+          <li>
+            <a href="#">Cadastro</a>
+            <ul class="submenu">
+              <li><a href="cadastroFuncoes.html">Cadastrar Funções</a></li>
+              <li><a href="cadastrosetor.html">Cadastrar Setor</a></li>
+              <li><a href="cadastroCNPJ.html">Cadastro de CNPJ</a></li>
+              <li>
+                <a href="cadastroRisco.html">Cadastro de Risco Ocupacional</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="cadastroUsuarios.html">Cadastro de Usuários</a></li>
+        </ul>
+      </menu>
+    </header>
+    <div class="form-container">
+      <img src="logoSos.png" alt="Logo" class="logo" />
+      <h2>Cadastro de Setor</h2>
+      <form action="/submit_form" method="post">
+        <label for="nome">Nome do Setor:</label>
+        <input type="text" id="nome" name="nome" required />
+        <input type="submit" value="Cadastrar" />
+      </form>
+    </div>
+  </body>
 </html>
